@@ -6,16 +6,16 @@
 /*   By: djin <djin@42.fr>                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 12:05:21 by djin              #+#    #+#             */
-/*   Updated: 2023/04/05 12:07:01 by djin             ###   ########.fr       */
+/*   Updated: 2023/04/06 01:14:32 by djin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
 
 char	*ft_strupcase(char	*str)
 {
-	int i;
+	int	i;
 
-	i=0;
+	i = 0;
 	while (str[i] != '\0')
 	{
 		if (str[i] >= 65 && str[i] <= 90)
@@ -27,7 +27,7 @@ char	*ft_strupcase(char	*str)
 	return (str);
 }
 
-int main(void)
+/**int main(void)
 {
 char text[] = "AJGFH";
 
@@ -35,4 +35,4 @@ char text[] = "AJGFH";
 		ft_strupcase(text);
 	printf("After: %s\n", ft_strupcase(text));
 	return (0);
-}
+}*/

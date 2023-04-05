@@ -6,19 +6,19 @@
 /*   By: djin <djin@42.fr>                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 20:01:41 by djin              #+#    #+#             */
-/*   Updated: 2023/04/04 20:22:55 by djin             ###   ########.fr       */
+/*   Updated: 2023/04/06 01:10:03 by djin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
 
 int	ft_str_is_alpha(char	*str)
 {
-	int i;
+	int	i;
 
-	i=0;
+	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] >= '0' && str[i] <= '9')		
+		if (str[i] >= '0' && str[i] <= '9')
 		{
 			i++;
 		}
@@ -30,9 +30,9 @@ int	ft_str_is_alpha(char	*str)
 	return (1);
 }
 
-int main(void)
+/**int main(void)
 {
 char text[] = "13gsjh878270";
 printf("Str shows: %d\n", ft_str_is_alpha(text));
 	return (0);
-}
+}*/
