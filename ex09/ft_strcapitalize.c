@@ -1,38 +1,55 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: djin <djin@42.fr>                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/04 20:39:25 by djin              #+#    #+#             */
-/*   Updated: 2023/04/05 12:03:26 by djin             ###   ########.fr       */
+/*   Created: 2023/04/05 12:08:00 by djin              #+#    #+#             */
+/*   Updated: 2023/04/05 13:42:38 by djin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
 
-char	*ft_strupcase(char	*str)
+char	*ft_strcapitalize(char	*str)
 {
 	int i;
 
 	i=0;
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 97 && str[i] <= 122)
+		while((str[i] >= 'A') && (str[i] <= 'Z'))
 		{
-			str[i] = str[i] - 32;
+			while((str[i] >= 'a') && (str[i] <= 'z'))
+			{
+				while ((str[i] >= 'a' && str[i] <= 'z'))
+					{
+				   		str[i] = str[i] - 32;
+					 }
+				while ((str[i] >= 'A' && str[i] <= 'Z'))
+					{
+						str[i] = str[i] + 32;
+					}
+				if (str[i] == 32)
+				{
+					i++;
+				}
+				i++;
+				{
+					return (str);
+				}
+			}
 		}
-		i++;
 	}
 	return (str);
 }
 
 int main(void)
 {
-char text[] = "jaguhaugh";
+char text[] = "You Are Pretty";
 
 	printf("Before: %s\n", text);
-		ft_strupcase(text);
-	printf("After: %s\n", ft_strupcase(text));
+		ft_strcapitalize(text);
+	printf("After: %s\n", ft_strcapitalize(text));
 	return (0);
 }
