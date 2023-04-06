@@ -6,7 +6,7 @@
 /*   By: djin <djin@42.fr>                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 15:55:03 by djin              #+#    #+#             */
-/*   Updated: 2023/04/06 01:08:27 by djin             ###   ########.fr       */
+/*   Updated: 2023/04/06 10:46:46 by djin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
@@ -18,7 +18,11 @@ int	ft_str_is_alpha(char	*str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z' || str[i] >= 'A' && str[i] <= 'Z')
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			i++;
+		}
+		else if (str[i] >= 'A' && str[i] <= 'Z')
 		{
 			i++;
 		}
@@ -32,7 +36,7 @@ int	ft_str_is_alpha(char	*str)
 
 /**int main(void)
 {
-char text[] = "kjbgskjjhoiisg";
+char text[] = "kjbgskjjhoiiUFUHAg";
 printf("Str shows: %d\n", ft_str_is_alpha(text));
 	return (0);
 }*/
