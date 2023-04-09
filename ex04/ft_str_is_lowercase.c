@@ -6,12 +6,12 @@
 /*   By: djin <djin@42.fr>                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 20:16:47 by djin              #+#    #+#             */
-/*   Updated: 2023/04/06 01:11:34 by djin             ###   ########.fr       */
+/*   Updated: 2023/04/06 16:55:58 by djin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
 
-int	ft_str_is_alpha(char	*str)
+int	ft_str_is_lowercase(char	*str)
 {
 	int	i;
 
@@ -33,6 +33,6 @@ int	ft_str_is_alpha(char	*str)
 /**int main(void)
 {
 char text[] = "fHH8170IUJI";
-printf("Str shows: %d\n", ft_str_is_alpha(text));
+printf("Str shows: %d\n", ft_str_is_lowercase(text));
 	return (0);
 }*/

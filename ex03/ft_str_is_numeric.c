@@ -6,12 +6,12 @@
 /*   By: djin <djin@42.fr>                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 20:01:41 by djin              #+#    #+#             */
-/*   Updated: 2023/04/06 10:49:36 by djin             ###   ########.fr       */
+/*   Updated: 2023/04/06 16:54:46 by djin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
 
-int	ft_str_is_alpha(char	*str)
+int	ft_str_is_numeric(char	*str)
 {
 	int	i;
 
@@ -33,6 +33,6 @@ int	ft_str_is_alpha(char	*str)
 /**int main(void)
 {
 char text[] = "13gsjh878270";
-printf("Str shows: %d\n", ft_str_is_alpha(text));
+printf("Str shows: %d\n", ft_str_is_numeric(text));
 	return (0);
 }*/
